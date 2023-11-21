@@ -23,9 +23,13 @@ twitter:
 
 plugins:
   - jekyll-target-blank
+  - jekyll-paginate
 
 target-blank:
     rel: nofollow
+
+# Paginate
+paginate: 4
 
 #header_page_refs: ['now', 'about', 'contact']
 header_page_refs: [{'id' : 'telegram', 'name': '电报'}, {'id': 'twitter', 'name': '推特'}, {'id': 'exchange', 'name': '交易所'}, {'id': 'account', 'name': '账号类'}, {'id': 'about', 'name': '关于我们'}]
