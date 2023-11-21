@@ -6,7 +6,7 @@ layout: default
 
   {{ content }}
 
-  <h2>Latest Posts</h2>
+  <h2>最新文章</h2>
 
   <div>&nbsp;</div>
 
@@ -19,8 +19,7 @@ layout: default
 
         <h2>
           {{ post.url }}
-          {{ absolute_url }}
-          <a class="post-link" href="{{ post.url | absolute_url }}" title="{{ post.title }}">{{ post.title | escape }}</a>
+          <a class="post-link" href="/docs{{ post.url | absolute_url }}" title="{{ post.title }}">{{ post.title | escape }}</a>
         </h2>
 
         {{ post.excerpt | markdownify | truncatewords: 30 }}
