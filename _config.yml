@@ -20,7 +20,7 @@ author: 小青
 image: /thumbnail-jumbo.png
 twitter:
   username: idanhua
-
+ 
 plugins:
   - jekyll-target-blank
   - jekyll-paginate
@@ -29,7 +29,7 @@ target-blank:
     rel: nofollow
 
 # Paginate
-paginate: 4
+paginate: 10
 paginate_path: "docs/page:num"
 
 #header_page_refs: ['now', 'about', 'contact']
