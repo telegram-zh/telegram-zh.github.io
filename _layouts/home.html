@@ -44,11 +44,8 @@ layout: default
             {% assign start_page = paginator.page | minus: half_num_pages | max: 1 %}
             {% assign end_page = paginator.page | plus: half_num_pages | min: paginator.total_pages %}
 
-            {% if start_page > 1 %}
-                <li class="page-item"><a class="page-link" href="{{site.url}}/">1</a></li>
-                {% if start_page > 2 %}
-                    <li class="page-item disabled"><span class="webjeda page-link">...</span></li>
-                {% endif %}
+            {% if start_page > 2 %}
+              <li class="page-item disabled"><span class="webjeda page-link">...</span></li>
             {% endif %}
 
             {% for page in (start_page..end_page) %}
