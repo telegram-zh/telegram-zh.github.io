@@ -45,13 +45,16 @@ layout: default
             {% assign end_page = paginator.page | plus: half_num_pages | min: paginator.total_pages %}
 
             {% if start_page > 2 %}
-              <li class="page-item disabled"><span class="webjeda page-link">...</span></li>
+                <li class="page-item"><a class="page-link" href="{{site.url}}/">1</a></li>
+                {% if start_page > 2 %}
+                    <li class="page-item disabled"><span class="webjeda page-link">...</span></li>
+                {% endif %}
             {% endif %}
 
             {% for page in (start_page..end_page) %}
                 {% if page == paginator.page %}
                     <li class="page-item disabled"><span class="webjeda page-link">{{ page }}</span></li>
-                {% else %}
+                {% else if page > 0 %}
                     <li class="page-item"><a class="page-link" href="{{ site.paginate_path | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>
                 {% endif %}
             {% endfor %}
