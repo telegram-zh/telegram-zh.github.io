@@ -13,9 +13,7 @@ layout: default
   <ul class="post-list">
     {% for post in paginator.posts %}
       <li>
-
         {% assign date_format = site.cayman-blog.date_format | default: "%b %-d, %Y" %}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
 
         {% assign url_link = post.url %}
         <h2>
@@ -23,7 +21,7 @@ layout: default
         </h2>
 
         {{ post.excerpt | markdownify | truncatewords: 30 }}
-
+        <span class="post-meta">{{ post.date | date: date_format }}</span>
       </li>
     {% endfor %}
   </ul>
