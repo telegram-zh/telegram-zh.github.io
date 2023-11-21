@@ -44,7 +44,7 @@
     font-size: 14px;
     font-weight: 600;
   }
-  
+
 .page-img {
     object-fit: cover;
 }
@@ -52,47 +52,57 @@
 .page-item:first-child .page-link {
     margin-left: 0;
     border-top-left-radius: 0.25rem;
-    border-bottom-left-radius: 0.25rem; }
+    border-bottom-left-radius: 0.25rem; 
+}
   
 .page-item:last-child .page-link {
     border-top-right-radius: 0.25rem;
-    border-bottom-right-radius: 0.25rem; }
+    border-bottom-right-radius: 0.25rem; 
+}
   
-  .page-item.active .page-link {
+.page-item.active .page-link {
     z-index: 1;
     color: #fff;
     background-color: #03a87c;
-    border-color: #03a87c; }
+    border-color: #03a87c; 
+}
   
-  .page-item.disabled .page-link {
+.page-item.disabled .page-link {
     color: #6c757d;
     pointer-events: none;
     cursor: auto;
     background-color: #fff;
-    border-color: #dee2e6; }
+    border-color: #dee2e6; 
+}
   
-  .pagination-lg .page-link {
+.pagination-lg .page-link {
     padding: 0.75rem 1.5rem;
     font-size: 1.15rem;
-    line-height: 1.5; }
+    line-height: 1.5; 
+}
   
-  .pagination-lg .page-item:first-child .page-link {
+.pagination-lg .page-item:first-child .page-link {
     border-top-left-radius: 0.3rem;
-    border-bottom-left-radius: 0.3rem; }
+    border-bottom-left-radius: 0.3rem; 
+}
   
-  .pagination-lg .page-item:last-child .page-link {
+.pagination-lg .page-item:last-child .page-link {
     border-top-right-radius: 0.3rem;
-    border-bottom-right-radius: 0.3rem; }
+    border-bottom-right-radius: 0.3rem; 
+}
   
-  .pagination-sm .page-link {
+.pagination-sm .page-link {
     padding: 0.25rem 0.5rem;
     font-size: 0.875rem;
-    line-height: 1.5; }
+    line-height: 1.5; 
+}
   
-  .pagination-sm .page-item:first-child .page-link {
+.pagination-sm .page-item:first-child .page-link {
     border-top-left-radius: 0.2rem;
-    border-bottom-left-radius: 0.2rem; }
+    border-bottom-left-radius: 0.2rem; 
+}
   
-  .pagination-sm .page-item:last-child .page-link {
+.pagination-sm .page-item:last-child .page-link {
     border-top-right-radius: 0.2rem;
-    border-bottom-right-radius: 0.2rem; }
+    border-bottom-right-radius: 0.2rem; 
+}
