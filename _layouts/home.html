@@ -34,7 +34,7 @@ layout: default
     {% if paginator.total_pages > 1 %}
         <ul class="pagination"> 
             {% if paginator.previous_page %}
-                <li class="page-item"><a class="page-link" href="/{{ paginator.previous_page_path | replace: '//', '/' }}">&laquo; 上一页</a></li>
+                <li class="page-item"><a class="page-link" href="{{ paginator.previous_page_path | replace: '//', '/' }}">&laquo; 上一页</a></li>
             {% else %}
                 <li class="page-item disabled"><span class="prev page-link">&laquo;</span></li>
             {% endif %}
@@ -44,6 +44,8 @@ layout: default
             {% assign start_page = paginator.page | minus: half_num_pages | max: 1 %}
             {% assign end_page = paginator.page | plus: half_num_pages | min: paginator.total_pages %}
 
+            {{ start_page }}
+            {{ end_page }}
             {% if start_page > 2 %}
                 <li class="page-item"><a class="page-link" href="{{site.url}}/">1</a></li>
                 {% if start_page > 2 %}
@@ -52,9 +54,9 @@ layout: default
             {% endif %}
 
             {% for page in (start_page..end_page) %}
-                {% if page == paginator.page and page > 0 %}
+                {% if page == paginator.page %}
                     <li class="page-item disabled"><span class="webjeda page-link">{{ page }}</span></li>
-                {% else if page >0 %}
+                {% else %}
                     <li class="page-item"><a class="page-link" href="/{{ site.paginate_path | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>
                 {% endif %}
             {% endfor %}
@@ -67,7 +69,7 @@ layout: default
             {% endif %}
 
             {% if paginator.next_page %}
-                <li class="page-item"><a class="page-link" href="/{{ paginator.next_page_path | replace: '//', '/' }}">下一页 &raquo;</a></li>
+                <li class="page-item"><a class="page-link" href="{{ paginator.next_page_path | replace: '//', '/' }}">下一页 &raquo;</a></li>
             {% else %}
                 <li class="page-item disabled"><span class="next page-link">&raquo;</span></li>
             {% endif %}
