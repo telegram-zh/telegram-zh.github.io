@@ -17,7 +17,7 @@ layout: default
         {% assign date_format = site.cayman-blog.date_format | default: "%b %-d, %Y" %}
         <span class="post-meta">{{ post.date | date: date_format }}</span>
 
-        {% assign url_link = post.url | absolute_url %}
+        {% assign url_link = post.url %}
         <h2>
           {{ url_link }}
           <a class="post-link" href="{{ url_link }}" title="{{ post.title }}">{{ post.title | escape }}</a>
