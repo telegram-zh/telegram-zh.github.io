@@ -2,7 +2,7 @@
 layout: page
 title: Now
 tagline: What I'm doing now
-permalink: /now.html
+permalink: /docs/now.html
 ref: now
 order: 2
 ---
