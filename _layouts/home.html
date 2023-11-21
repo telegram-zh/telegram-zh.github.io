@@ -52,8 +52,7 @@ layout: default
             {% endif %}
 
             {% for page in (start_page..end_page) %}
-                {{ page }}
-                {% if page == paginator.page %}
+                {% if page == paginator.page and page > 0 %}
                     <li class="page-item disabled"><span class="webjeda page-link">{{ page }}</span></li>
                 {% else if page > 0 %}
                     <li class="page-item"><a class="page-link" href="{{ site.paginate_path | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>
