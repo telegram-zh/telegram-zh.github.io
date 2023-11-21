@@ -38,4 +38,3 @@ canonical_url: 'https://tggsearch.github.io'
     </a>
   </div>
 </div>
-

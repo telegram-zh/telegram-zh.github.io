@@ -11,7 +11,7 @@ google_analytics: G-61CEYEJKCR
 # cayman-blog date format
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
 cayman-blog:
-  date_format: "%b %-d, %Y"
+ # date_format: "%b %-d, %Y"
 
 theme: # leave it empty
 
@@ -31,4 +31,5 @@ target-blank:
 # Paginate
 paginate: 10
 
-header_page_refs: [{'id' : 'telegram', 'name': '电报'}, {'id': 'twitter', 'name': '推特'}, {'id': 'exchange', 'name': '交易所'}, {'id': 'account', 'name': '账号类'}]
+#header_page_refs: [{'id' : 'telegram', 'name': '电报'}, {'id': 'twitter', 'name': '推特'}, {'id': 'exchange', 'name': '交易所'}, {'id': 'account', 'name': '账号类'}]
+header_page_refs: ['now', 'about', 'contact']
