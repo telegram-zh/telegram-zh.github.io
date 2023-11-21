@@ -20,7 +20,6 @@ layout: default
           <a class="post-link" href="{{ url_link }}" title="{{ post.title }}">{{ post.title | escape }}</a>
         </h2>
 
-        
         {{ post.excerpt | replace: '<script.*?</script>', '' | strip_html | markdownify | truncate: 30 }}
 
         <p>
