@@ -6,8 +6,10 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 #
 layout: home
+title:  海外软件技术与区块链技术交流平台
+description: 提供全球软件技术交流知识，涵盖电报、纸飞机、推特等多个海外平台，深入探讨油管、YouTube、Facebook等内容。欧易和币安的使用教程，节点返佣等实用信息全面解读。如需技术支持，请添加QQ联系：2136868442。
 ---
-## 常用资源导航
+### 常用资源导航
 <div  class='icon-block-body-four'>
   <div class='icon-block-item'>
     <a href="./telegram.html">
