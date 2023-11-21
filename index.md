@@ -7,11 +7,30 @@
 #
 layout: home
 ---
-
-Cayman Blog Theme is a clean, responsive blogging theme for Jekyll. It is inspired by the Cayman Theme for Github Pages, which can be greatly used for single projects but not as blogging platform.
-
-This theme has instead all you need to start today blogging with Jekyll, and no effort: pages, posts, few social buttons. Try loading this on mobile too.
-
-Have a look at the Github page for more information.
-
-You find this descriptive text in the `index.md` file, so you can change it, or remove it completely, according to your needs.
+## 常用资源导航
+<div  class='icon-block-body-four'>
+  <div class='icon-block-item'>
+    <a href="./telegram.html">
+        <img src="https://cdn.jsdelivr.net/gh/tggsearch/tggSearch.github.io/assets/img/telegram.png" alt="电报教程" height=50px>
+        <p>电报教程</p>
+    </a>
+  </div>
+   <div class='icon-block-item'>
+    <a href="./twitter.html">
+        <img src="https://cdn.jsdelivr.net/gh/tggsearch/tggSearch.github.io/assets/img/twitter.png" alt="推特教程" height=50px>
+        <p>推特教程</p>
+    </a>
+  </div>
+   <div class='icon-block-item'>
+    <a href="./okx.html">
+        <img src="https://cdn.jsdelivr.net/gh/tggsearch/tggSearch.github.io/assets/img/okx.png" alt="欧易教程" height=50px>
+        <p>币交易所</p>
+    </a>
+  </div>
+  <div class='icon-block-item'>
+    <a href="./account.html">
+        <img src="https://cdn.jsdelivr.net/gh/tggsearch/tggSearch.github.io/assets/img/shadowrocket.jpeg" alt="小火箭教程" height=50px>
+        <p>账号类</p>
+    </a>
+  </div>
+</div>
