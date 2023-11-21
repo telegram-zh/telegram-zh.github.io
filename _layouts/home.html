@@ -20,7 +20,7 @@ layout: default
           <a class="post-link" href="{{ url_link }}" title="{{ post.title }}">{{ post.title | escape }}</a>
         </h2>
 
-        {{ post.excerpt | markdownify | truncate: 30 }}
+        {{ post.excerpt | truncate: 30 }}
         <p>
           <span class="post-meta">{{ post.date | date: date_format }}</span>
         </p>
