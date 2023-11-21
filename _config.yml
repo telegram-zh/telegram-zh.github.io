@@ -29,8 +29,6 @@ target-blank:
     rel: nofollow
 
 # Paginate
-pagination:
-  enabled: true
 paginate: 4
 paginate_path: "docs/page:num"
 
