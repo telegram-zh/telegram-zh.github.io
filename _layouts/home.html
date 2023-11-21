@@ -34,7 +34,7 @@ layout: default
     {% if paginator.total_pages > 1 %}
         <ul class="pagination"> 
             {% if paginator.previous_page %}
-                <li class="page-item"><a class="page-link" href="{{ paginator.previous_page_path | replace: '//', '/' }}">&laquo; 上一页</a></li>
+                <li class="page-item"><a class="page-link" href="/{{ paginator.previous_page_path | replace: '//', '/' }}">&laquo; 上一页</a></li>
             {% else %}
                 <li class="page-item disabled"><span class="prev page-link">&laquo;</span></li>
             {% endif %}
@@ -54,8 +54,8 @@ layout: default
             {% for page in (start_page..end_page) %}
                 {% if page == paginator.page and page > 0 %}
                     <li class="page-item disabled"><span class="webjeda page-link">{{ page }}</span></li>
-                {% else if page > 0 %}
-                    <li class="page-item"><a class="page-link" href="{{ site.paginate_path | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>
+                {% else if page >0 %}
+                    <li class="page-item"><a class="page-link" href="/{{ site.paginate_path | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>
                 {% endif %}
             {% endfor %}
 
@@ -63,11 +63,11 @@ layout: default
                 {% if end_page < paginator.total_pages - 1 %}
                     <li class="page-item disabled"><span class="webjeda page-link">...</span></li>
                 {% endif %}
-                <li class="page-item"><a class="page-link" href="{{ site.paginate_path | replace: '//', '/' | replace: ':num', paginator.total_pages }}">{{ paginator.total_pages }}</a></li>
+                <li class="page-item"><a class="page-link" href="/{{ site.paginate_path | replace: '//', '/' | replace: ':num', paginator.total_pages }}">{{ paginator.total_pages }}</a></li>
             {% endif %}
 
             {% if paginator.next_page %}
-                <li class="page-item"><a class="page-link" href="{{ paginator.next_page_path | replace: '//', '/' }}">下一页 &raquo;</a></li>
+                <li class="page-item"><a class="page-link" href="/{{ paginator.next_page_path | replace: '//', '/' }}">下一页 &raquo;</a></li>
             {% else %}
                 <li class="page-item disabled"><span class="next page-link">&raquo;</span></li>
             {% endif %}
