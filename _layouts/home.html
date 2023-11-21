@@ -41,11 +41,9 @@ layout: default
 
             {% assign num_pages_to_display = 2 %}
             {% assign half_num_pages = num_pages_to_display | divided_by: 2 %}
-            {% assign start_page = paginator.page | minus: half_num_pages | max: 1 %}
+            {% assign start_page = paginator.page | minus: half_num_pages | min: 1 %}
             {% assign end_page = paginator.page | plus: half_num_pages | min: paginator.total_pages %}
 
-            {{ start_page }}
-            {{ end_page }}
             {% if start_page > 2 %}
                 <li class="page-item"><a class="page-link" href="{{site.url}}/">1</a></li>
                 {% if start_page > 2 %}
