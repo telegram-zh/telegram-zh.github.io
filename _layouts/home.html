@@ -18,6 +18,7 @@ layout: default
         <span class="post-meta">{{ post.date | date: date_format }}</span>
 
         <h2>
+          {{ post }}
           <a class="post-link" href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title | escape }}</a>
         </h2>
 
