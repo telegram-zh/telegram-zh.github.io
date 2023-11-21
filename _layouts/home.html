@@ -19,7 +19,7 @@ layout: default
 
         <h2>
           {{ post.path }}
-          <a class="post-link" href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title | escape }}</a>
+          <a class="post-link" href="{{ post.url }}" title="{{ post.title }}">{{ post.title | escape }}</a>
         </h2>
 
         {{ post.excerpt | markdownify | truncatewords: 30 }}
