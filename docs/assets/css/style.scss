@@ -36,6 +36,15 @@
     color: red;
 }
 
+.pagination {
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+    border-radius: 0.25rem; 
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
 .page-img {
     object-fit: cover;
 }
@@ -45,7 +54,7 @@
     border-top-left-radius: 0.25rem;
     border-bottom-left-radius: 0.25rem; }
   
-  .page-item:last-child .page-link {
+.page-item:last-child .page-link {
     border-top-right-radius: 0.25rem;
     border-bottom-right-radius: 0.25rem; }
   
