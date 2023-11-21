@@ -43,7 +43,11 @@
     border-radius: 0.25rem; 
     font-size: 14px;
     font-weight: 600;
-  }
+}
+
+.pagination li {
+    margin-left: 20px;
+}
 
 .page-img {
     object-fit: cover;
