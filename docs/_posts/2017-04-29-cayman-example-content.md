@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Example content"
-permalink: /cayman-example-content.html
+permalink: /docs/cayman-example-content.html
 ---
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
