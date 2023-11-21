@@ -21,17 +21,6 @@ image: /thumbnail-jumbo.png
 twitter:
   username: idanhua
 
-# Defaults
-defaults:
-
-  # all posts
-  - scope:
-      path: "_posts"
-    values:
-      layout: post
-      author: 小青
-      avatar: ./assets/images/avatar1.webp
-
 plugins:
   - jekyll-target-blank
   - jekyll-paginate
