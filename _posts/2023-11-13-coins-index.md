@@ -9,7 +9,7 @@ categories: [ exchange ]
 ---
 以下链接都自带返佣注册，请直接点击链接注册就可以获得最高返佣20%，火币最高30%，目前都已经是最高返佣，如果还需要更多返佣福利，可以再联系本站站主，每月达成交易额度，可以获得最高 30%的返佣比例，右下角可联系。
 ### 币圈各大返佣网址导航
-<div class='icon-block-body-three'>
+<div class='icon-block-body-four'>
   <div class='icon-block-item'>
     <a href="./302.html?target=https://www.okx.com/join/62030781" target="_blank">
         <img src="https://cdn.jsdelivr.net/gh/tggsearch/tggSearch.github.io/assets/img/okx.png" alt="OKX 欧易" height=50px>
@@ -34,12 +34,6 @@ categories: [ exchange ]
     <a href="./302.html?target=https://www.gate.io/signup/UllHXA0J/ab10?ref_type=103" target="_blank">
         <img src="https://cdn.jsdelivr.net/gh/tggsearch/tggSearch.github.io/assets/img/gateio.png" alt="GateIO 官网" height=50px>
         <p>GateIO</p>
-    </a>
-  </div>
-    <div class='icon-block-item'>
-    <a href="./302.html?target=https://partner.bitget.com/bg/ml6l51911687837747447" target="_blank">
-        <img src="https://cdn.jsdelivr.net/gh/tggsearch/tggSearch.github.io/assets/img/bitget.png" alt="BitGet 官网" height=50px>
-        <p>BitGet</p>
     </a>
   </div>
 </div>
