@@ -52,7 +52,7 @@ layout: default
             {% endif %}
 
             {% for page in (start_page..end_page) %}
-              {% if page> 0 %}
+              {% if page> 0 and page <= paginator.total_pages %}
                   {% if page == paginator.page %}
                       <li class="page-item disabled"><span class="webjeda page-link">{{ page }}</span></li>
                   {% else %}
