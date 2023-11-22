@@ -24,7 +24,7 @@ twitter:
 plugins:
   - jekyll-target-blank
   - jekyll-paginate
-  - jekyll-feed
+  - jekyll-seo
 
 target-blank:
     rel: nofollow
