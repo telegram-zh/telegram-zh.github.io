@@ -65,7 +65,7 @@ canonical_url: 'https://tggsearch.github.io/telegram.html'
   
           {% assign url_link = post.url %}
           <h2>
-            <a class="post-link" href="{{ url_link }}" title="{{ post.title }}">{% if post.pin == true %}🔥🔥🔥{% endif %}{{ post.title | escape }}</a>
+            <a class="post-link" href="{{ url_link }}" title="{{ post.title }}">{{ post.title | escape }}</a>
           </h2>
   
           {{ post.excerpt | replace: '<script.*?</script>', '' | strip_html | markdownify | truncate: 60 }}
