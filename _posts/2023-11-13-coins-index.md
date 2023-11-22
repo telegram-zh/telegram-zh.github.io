@@ -5,6 +5,7 @@ image: https://cdn.jsdelivr.net/gh/tggsearch/tggSearch.github.io/assets/img/okx.
 description: 欧易返佣，币安返佣，火币返佣，bitGet返佣，gateIo返佣，bitGet返佣，欧易电报群，币安电报群，火币电报群，bitGet电报群，gateIo电报群。币圈各大功能教程导航，例如合约玩法，充提 USDT 教程等。查看加密货币交易所排名，根据用户评价和交易量挑选您信赖的交易平台。
 canonical_url: 'https://tggsearch.github.io/docs/coins-index.html'
 locale: zh_CN
+categories: [ exchange ]
 ---
 以下链接都自带返佣注册，请直接点击链接注册就可以获得最高返佣20%，火币最高30%，目前都已经是最高返佣，如果还需要更多返佣福利，可以再联系本站站主，每月达成交易额度，可以获得最高 30%的返佣比例，右下角可联系。
 ### 币圈各大返佣网址导航

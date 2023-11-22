@@ -3,6 +3,7 @@ layout: default
 title: KamiChat，让Telegram用户体验前所未有的多平台聚合，Telegram 桌面版本
 description: telegram 桌面版/facebook message 桌面版/whatsapp 桌面版，适配 windows 和 mac 系统
 canonical_url: 'https://tggsearch.github.io/docs/telegram-desktop.html'
+categories: [ telegram ]
 ---
 > 你想在电脑上使用电报 telegram 吗？
 你想在电报上使用多个 telegram 账号吗？

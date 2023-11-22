@@ -3,6 +3,7 @@ layout: default
 title: Telegram 机器人
 description: Telegram 机器人是什么，Telegram 有哪些比较有趣的机器人，如果自己想创建电报机器人应该如何来开始
 canonical_url: 'https://tggsearch.github.io/docs/telegram-bot.html'
+categories: [ telegram ]
 ---
 ### 什么是 Telegram 机器人？
 随着科技的不断进步，人们对于智能化工具和自动化助手的需求日益增加。在这个数字化时代，Telegram 机器人成为了一种极具吸引力的工具。Telegram 机器人是一种基于人工智能和机器学习技术的自动化程序，可以在 Telegram 平台上执行各种任务。它们不仅仅是程序代码，更是为用户提供服务、娱乐、教育甚至商业用途的智能体。

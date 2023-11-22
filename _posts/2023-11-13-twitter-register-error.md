@@ -3,6 +3,7 @@ layout: default
 title: 推特twitter注册显示错误｜推特twitter错误请重试终极解决方案
 description: 推特twitter错误请重试，推特创建账号出错，推特无法查看，注册后立马被封禁原因分析，推特注册是否需要手机号，推特停留在查看世界正在发生的事情等的解决方案
 canonical_url: 'https://tggsearch.github.io/docs/twitter-register-error.html'
+categories: [ twitter ]
 ---
 在注册推特的过程中很多人会遇到一些问题，其次也有人经常会问，推特注册是否需要手机号，答案是不需要的，这里主要是注册的问题，如果你遇到[推文无法查看，点击这里](./twitter-spc.html)
 ### 提示系统错误，请稍后重试

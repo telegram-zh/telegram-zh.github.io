@@ -3,6 +3,7 @@ layout: default
 title: SMS 接码平台｜sms activate｜ChatGPT 接码｜注册海外各类社交账号教程
 description: 海外短信接码平台资源合集, 可用于注册常见国外网站和App和接收验证码，比如Telegram，ChatGPT，Google, WhatsApp， Amazon，Facebook， Instagram，Tinder，Twitter等。
 canonical_url: 'https://tggsearch.github.io/docs/receive-code.html'
+categories: [ account ]
 ---
 SMS 接码平台很多，但是要找到靠谱比较稳定的平台，有很多小众的接码平台，你充值后。发现很多账号都无法使用，或者被人注册了，或者被封号了，问题很多。因此找到稳定靠谱的接码平台就非常重要。
 
