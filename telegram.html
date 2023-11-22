@@ -40,8 +40,11 @@ canonical_url: 'https://tggsearch.github.io/telegram.html'
     <ul class="post-list">
       {% for category in site.categories %} 
       {% if 'telegram' == category[0] %}
+        {% assign count = 0 %}
         {% assign pages_list = category[1] %}
         {% for post in pages_list %}
+            {% if post.title != null and count < 30 %}
+            {% assign count = count | plus: 1 %}
         <li>
           {% assign date_format = site.cayman-blog.date_format | default: "%b %-d, %Y" %}
   
@@ -56,6 +59,7 @@ canonical_url: 'https://tggsearch.github.io/telegram.html'
             <span class="post-meta">{{ post.date | date: date_format }}</span>
           </p>
         </li>
+            {% endif %}
         {% endfor %}
         {% endif %}
     {% endfor %}
