@@ -47,19 +47,19 @@ canonical_url: 'https://tggsearch.github.io/telegram.html'
         {% for tmp_post in pages_list %}
             {{ tmp_post.title }}
             {% if tmp_post.pin == true %}
-                {% assign pin_posts = pin_posts | append: tmp_post | append: ',' %}
+                {% assign pin_posts = pin_posts | push: tmp_post %}
             {% else %}
-                {% assign regular_posts = regular_posts | append: tmp_post | append: ',' %}
+                {% assign regular_posts = regular_posts | push: tmp_post %}
             {% endif %}
         {% endfor %}
       {% endif %}
       {% endfor %}
 
-      {% assign combined_posts = pin_posts | append: regular_posts | join: ',' %}
+      {% assign combined_posts = pin_posts | concat: regular_posts %}
 
       {% assign count = 0 %}
-      {% assign posts_list = combined_posts | split: ',' %}
       {% for post in posts_list %}
+        {{ post.title }}
         {% if post.title != null and count < 30 %}
             {% assign count = count | plus: 1 %}
         <li>
