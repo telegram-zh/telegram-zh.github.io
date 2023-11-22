@@ -38,10 +38,11 @@ canonical_url: 'https://tggsearch.github.io/telegram.html'
     <div>&nbsp;</div>
   
     <ul class="post-list">
+      {% assign pin_posts = '' %}
+      {% assign regular_posts = '' %}
+
       {% for category in site.categories %} 
       {% if 'telegram' == category[0] %}
-        {% assign pin_posts = '' %}
-        {% assign regular_posts = '' %}
         {% assign pages_list = category[1] %}
         {% for post in pages_list %}
             {% if post.pin == true  %}
@@ -53,15 +54,12 @@ canonical_url: 'https://tggsearch.github.io/telegram.html'
       {% endif %}
       {% endfor %}
 
-      {% assign sorted_regular_posts = regular_posts | split: ',' | sort: 'date' | reverse %}
-      {% assign sorted_pin_posts = pin_posts | split: ',' | sort: 'date' | reverse %}
       {% assign combined_posts = sorted_pin_posts | append: sorted_regular_posts | join: ',' %}
 
       {% assign count = 0 %}
       {% assign posts_list = combined_posts | split: ',' %}
       {% for post in posts_list %}
-        {% if count < 30 %}
-            {% if post.title != null %}
+        {% post.title != null and if count < 30 %}
             {% assign count = count | plus: 1 %}
         <li>
           {% assign date_format = site.cayman-blog.date_format | default: "%b %-d, %Y" %}
@@ -77,7 +75,6 @@ canonical_url: 'https://tggsearch.github.io/telegram.html'
             <span class="post-meta">{{ post.date | date: date_format }}</span>
           </p>
         </li>
-            {% endif %}
         {% endif %}
       {% endfor %}
     </ul>
