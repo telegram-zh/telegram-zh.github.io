@@ -45,7 +45,6 @@ canonical_url: 'https://tggsearch.github.io/telegram.html'
       {% if 'telegram' == category[0] %}
         {% assign pages_list = category[1] %}
         {% for tmp_post in pages_list %}
-            {{ tmp_post.title }}
             {% if tmp_post.pin == true %}
                 {% assign pin_posts = pin_posts | push: tmp_post %}
             {% else %}
@@ -58,8 +57,7 @@ canonical_url: 'https://tggsearch.github.io/telegram.html'
       {% assign combined_posts = pin_posts | concat: regular_posts %}
 
       {% assign count = 0 %}
-      {% for post in posts_list %}
-        {{ post.title }}
+      {% for post in combined_posts %}
         {% if post.title != null and count < 30 %}
             {% assign count = count | plus: 1 %}
         <li>
