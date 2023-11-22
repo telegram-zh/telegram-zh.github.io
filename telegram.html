@@ -56,11 +56,11 @@ canonical_url: 'https://tggsearch.github.io/telegram.html'
 
       {% assign combined_posts = pin_posts | append: regular_posts | join: ',' %}
 
-      {{ combined_posts }}
-      
       {% assign count = 0 %}
       {% assign posts_list = combined_posts | split: ',' %}
       {% for post in posts_list %}
+        {{ post.title }}
+        {{ count }}
         {% if post.title != null and count < 30 %}
             {% assign count = count | plus: 1 %}
         <li>
