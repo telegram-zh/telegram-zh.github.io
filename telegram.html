@@ -31,3 +31,33 @@ canonical_url: 'https://tggsearch.github.io/telegram.html'
     </a>
   </div>
 </div>
+
+<div>
+    <h2>电报最新文章</h2>
+  
+    <div>&nbsp;</div>
+  
+    <ul class="post-list">
+      {% for category in site.categories %} 
+      {% if 'telegram' == category[0] %}
+        {% assign pages_list = category[1] %}
+        {% for post in pages_list %}
+        <li>
+          {% assign date_format = site.cayman-blog.date_format | default: "%b %-d, %Y" %}
+  
+          {% assign url_link = post.url %}
+          <h2>
+            <a class="post-link" href="{{ url_link }}" title="{{ post.title }}">{{ post.title | escape }}</a>
+          </h2>
+  
+          {{ post.excerpt | replace: '<script.*?</script>', '' | strip_html | markdownify | truncate: 60 }}
+  
+          <p>
+            <span class="post-meta">{{ post.date | date: date_format }}</span>
+          </p>
+        </li>
+        {% endfor %}
+        {% endif %}
+    {% endfor %}
+    </ul>
+</div>
