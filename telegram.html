@@ -38,9 +38,6 @@ canonical_url: 'https://tggsearch.github.io/telegram.html'
     <div>&nbsp;</div>
   
     <ul class="post-list">
-      {% assign pin_posts = '' %}
-      {% assign regular_posts = '' %}
-
       {% for category in site.categories %} 
       {% if 'telegram' == category[0] %}
         {% assign pages_list = category[1] %}
